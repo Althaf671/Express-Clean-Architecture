@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "bun --watch run server.ts"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
