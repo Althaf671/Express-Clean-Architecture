@@ -1,11 +1,6 @@
 /**
  * Student Routes
- * Bertanggung jawab membuat objek rute
- * 
- * Konvesi penamaan routes:
- * POST -> "/" 
- * GET by name -> "/name/:name"
- * GET list -> "/list"
+ * Bertanggung jawab membuat objek rute sekaligus DI container
  */
 
 import { Router } from "express";
@@ -17,7 +12,7 @@ import { db } from "../../infrastructures/persistances/db";
 const studentRouter = Router();
 
 /**
- * Manual Dependecy Injection:
+ * Manual Dependecy Injection - scoped lifetime:
  * 1. Buat objek service dan teruskan objek database ke dalamnya
  * 2. Buat objek controller dan teruskan objek service ke dalamnya
  */
