@@ -1,4 +1,16 @@
-import { Database } from "./database";
+import { drizzle } from "drizzle-orm/postgres-js";
+import * as schema from "./schema";
+import * as relations from "./schema-relations";
+import postgres from "postgres";
+import { ENV } from "../config/env";
 
-// buat instance database
-export const db = new Database();
+const client = postgres(ENV.DATABASE_URL);
+
+export const db = drizzle(client, {
+    schema: {
+        ...schema,
+        ...relations
+    }
+})
+
+export type Database = typeof db;

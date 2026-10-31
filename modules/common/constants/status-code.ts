@@ -1,0 +1,12 @@
+//--- Status Code -------------------------------
+export const statusCodes = {
+    SERVER_ERROR: "SERVER_ERROR",
+    NOT_FOUND: "NOT_FOUND",
+    VALIDATION_ERROR: "VALIDATION_ERROR",
+    DUPLICATED: "DUPLICATED",
+    BAD_REQUEST: "BAD_REQUEST",
+    FORBIDDEN: "FORBIDDEN",
+    SUCCESS: "SUCCESS",
+    UNAUTHENTICATED: "UNAUTHENTICATED",
+    TO_MANY_REQUEST: "TO MANY REQUEST"
+} as const

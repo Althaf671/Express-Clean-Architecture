@@ -8,7 +8,7 @@ bun.lock
 .env
 .env.*
 
-# Exceptions
+# Exceptions`
 !.env.example
 
 # Build output
